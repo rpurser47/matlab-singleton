@@ -1,4 +1,4 @@
-# #Singleton Design Pattern in MATLAB
+# Singleton Design Pattern in MATLAB
 
 [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=rpurser47/matlab-singleton&project=matlab-singleton.prj&file=toolbox/GettingStarted.mlx&focus=true)
 
