@@ -13,13 +13,6 @@
         <File Location="README.md">
             <Info/>
         </File>
-        <File Location="ExampleSingleton.m">
-            <Info>
-                <Category UUID="FileClassCategory">
-                    <Label UUID="design"/>
-                </Category>
-            </Info>
-        </File>
         <File Location="toolbox">
             <Info/>
             <DIR_SIGNIFIER Location="1">

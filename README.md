@@ -6,6 +6,12 @@ The [singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern) 
 
 For example, consider a scenario where you need to load a large data file in MATLAB. Using the singleton pattern, you can create a class that loads the data file only once and then provides access to this data throughout your application.
 
+**Further Background:**
+
+* [Wikipedia on singleton design pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+* [Bishikh's article on design patterns in MATLAB](https://medium.com/@bishikh90/design-patterns-in-matlab-part-1-b0dac5dc9eb7)
+* [General implementation of extensible singleton class](https://www.mathworks.com/matlabcentral/fileexchange/24911-design-pattern-singleton-creational)
+
 ## Example
 
 The singleton in this example, `ExampleSingleton`, has an unusual feature: it throws a warning when it is initially created, which lets us see how it operates.   You get access to the singleton by calling `ExampleSingleton.getInstance()`, which invokes the static method `getInstance` on the `ExampleSingleton` class.  Static methods are functions on the whole class that you can call without creating an object of the class first. The class has a single property, `BigMatrixFromMATFile`, but you can have as many shared resources as you need.
@@ -85,13 +91,6 @@ sumBigMatrix
 ans = 1x100
    47.8637   46.0991   42.6053   50.8013   51.9369   51.9311   57.3730   51.8042   44.7296   47.7700   49.2533   55.7308   49.5907   49.9126   58.5664   48.6605   49.2496   48.9548   49.4461   52.2143   51.7851   49.4310   52.4658   51.3570   48.5629   51.9326   53.7970   51.1076   49.3826   53.9781   52.2792   50.6981   50.6085   51.9865   49.5975   49.3895   48.1099   47.2406   53.0686   48.4215   53.5152   51.7643   48.3104   48.5596   49.7964   52.2751   49.7991   49.5366   43.8886   47.9107
 
-```
-
-Delete the singleton from memory and remove the variable
-
-```matlab
-delete(theSingleton)
-clear theSingleton
 ```
 
 ## MATLAB Features Used
